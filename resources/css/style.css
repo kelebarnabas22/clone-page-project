@@ -68,8 +68,13 @@ nav {
 
 .monarchia-beerclub {
     color: #FEF500;
-    margin-top: 20px;
+    margin-top: 30px;
     margin-bottom: 20px;
+    z-index: 2;
+}
+
+.beerclub-logo{
+    z-index: 2;
 }
 
 .beerclub-logo:hover {
@@ -88,3 +93,34 @@ nav {
     justify-content: center;
 }
 
+.buttons-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+button {
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 20px;
+    padding: 3px 5px;
+    font-size: 25px;
+    margin: 8px 5px;
+    transition: all .3s ease-out;
+    color: #FEF500;
+}
+
+button:hover {
+    background-color: #000763;
+}
+
+.buttons-container button a {
+    text-decoration: none;
+    color: grey;
+    padding: 4px 8px;
+}
+
+.buttons-container button a:hover {
+    color: #FEF500;
+}
