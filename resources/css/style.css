@@ -1,0 +1,90 @@
+* {
+    box-sizing: border-box ; 
+    padding: 0 ;
+    margin: 0 ;
+}
+
+body {
+    font-family: "Lora" serif;
+}
+
+nav {
+    background-color: #FFA801;
+    padding: 10px;
+    border-top: 3px solid #FFE409;
+    border-bottom: 3px solid #FFE409;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-item {
+    margin-right: 20px;
+    position: relative; /* Ensure the item is positioned relatively */
+}
+
+.nav-item a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 10px;
+    display: block;
+    transition: all 0.3s ease; /* Smooth transition for all properties */
+    position: relative; /* Enable the top property to work */
+    top: 0; /* Initial top position */
+}
+
+/* Hover effect */
+.nav-item a:hover {
+    top: -3px; /* Move the item upwards by 3 pixels */
+}
+
+
+
+.title {
+    background-image: url(../photos/jon-parry-C8eSYwQkwHw-unsplash\ \(1\).jpg);
+    background-color: #000763;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+.title::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 7, 99, 0.4); /* Blue overlay with 50% opacity */
+    z-index: 1;
+}
+
+.monarchia-beerclub {
+    color: #FEF500;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.beerclub-logo:hover {
+    cursor: pointer;
+}
+
+.welcome-container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+}
+
