@@ -15,6 +15,21 @@ nav {
     border-bottom: 3px solid #FFE409;
 }
 
+h2, h3 {
+    color: #000763;
+    font-weight: bolder;
+}
+
+h2 {
+    font-size: 30px;
+    margin-top: 20px;
+}
+
+h3 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -77,6 +92,27 @@ nav {
     z-index: 2;
 }
 
+.nav-elements {
+    z-index: 2;
+    margin-left: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+    color: white;
+    transition:all .3s ease-in;
+    position: relative;
+    border-bottom: 1px solid transparent;
+}
+
+.nav-elements:hover {
+    border-bottom: 1px solid #FEF500;
+}
+
+.logo-container p {
+    color: white;
+    z-index: 2;
+    font-weight: bolder;
+}
+
 .beerclub-logo:hover {
     cursor: pointer;
 }
@@ -91,6 +127,7 @@ nav {
 .logo-container {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 .buttons-container {
@@ -100,18 +137,18 @@ nav {
     justify-content: center;
 }
 
-button {
+.gombok {
     background-color: white;
     border: 1px solid gray;
     border-radius: 20px;
-    padding: 3px 5px;
+    padding: 5px 8px;
     font-size: 25px;
-    margin: 8px 5px;
+    margin: 8px 8px;
     transition: all .3s ease-out;
     color: #FEF500;
 }
 
-button:hover {
+.gombok:hover {
     background-color: #000763;
 }
 
@@ -124,3 +161,87 @@ button:hover {
 .buttons-container button a:hover {
     color: #FEF500;
 }
+
+
+.selection {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.sörök img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.5s ease-out; /* Smooth transition for all properties */
+    position: relative; /* Enable the top property to work */
+    top: 0;
+}
+
+.sörök img:hover {
+    top: -20px;
+}
+
+
+.sörök {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all .1s ease-in-out;
+    padding-top: 10px;
+    border-radius: 20px;
+    color: #323232;
+}
+
+.sörök:hover {
+    background: #000763;
+    color: white;
+}
+
+.készlet {
+    margin-top: 80px;
+    background: white;
+    font-size: 20px;
+    color: #000763;
+    padding: 10px 80px;
+}
+
+.beer-name {
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bolder;
+    transition: color .1s ease-in-out
+}
+
+.beer-name:hover {
+    color: white;
+}
+
+.price {
+    font-size: 30px;
+    margin-top: 30px;
+    font-weight: bolder;
+}
+
+.kosár {
+    font-size: 20px;
+    margin-top: 25px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #000763;
+    background: #FEF500;
+    font-weight: bolder;
+    border: none;
+    margin-bottom: 25px;
+    transition: transform 0.3s ease, text-shadow 0.3s ease;
+
+}
+
+.kosár:hover {
+    transform: scale(1.1);
+    text-shadow: 1px 1px 5px rgba(255, 255, 255, 0.7);
+}
+
